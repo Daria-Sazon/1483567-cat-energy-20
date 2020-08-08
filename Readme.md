@@ -2,6 +2,7 @@
 
 * Студент: [Дарья Сазоненко](https://up.htmlacademy.ru/adaptive/20/user/1483567).
 * Наставник: [Ксения Григорьева](https://htmlacademy.ru/profile/arctic_pie).
+* Смена наставника: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
 
 ---
 

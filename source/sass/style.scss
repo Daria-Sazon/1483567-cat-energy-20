@@ -1,1 +1,43 @@
-// Начните писать стили здесь
+$basic-green: #68b738;
+$black: #000000;
+$dark-grey: #444444;
+$dark-grey-1: #111111;
+$dark-grey-2: #222222;
+$basic-grey: #f2f2f2;
+$special-grey: #ebebeb;
+$white: #ffffff;
+
+$font: "Oswald", arial, sans-serif;
+
+body {
+  height: 100%;
+  min-width: 320px;
+  font-family: $font;
+  font-size: 14px;
+  color: $black;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+@import "./blocks/page-header.scss";
+@import "./blocks/promo.scss";
+@import "./blocks/benefits.scss";
+@import "./blocks/fonts.scss";
+@import "./blocks/features.scss";
+@import "./blocks/aside.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/catalog.scss";
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

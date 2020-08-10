@@ -1,0 +1,35 @@
+.product__name {
+  color: $dark-grey-2;
+  padding: 0;
+}
+
+.product__name-link {
+  font-family: $font;
+  color: $dark-grey-2;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.product__table {
+  margin-bottom: 22px;
+}
+
+.product__table-row {
+  display: flex;
+  justify-content: space-between;
+  width: 142px;
+}
+
+.product__table-cell {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+}
+
+.product__picture {
+  width: 140px;
+  height: 100%;
+}

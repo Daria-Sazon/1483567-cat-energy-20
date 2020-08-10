@@ -1,0 +1,27 @@
+body {
+  height: 100%;
+  min-width: 320px;
+  font-family: $font;
+  font-size: 14px;
+  color: $black;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}

@@ -3,3 +3,23 @@
   padding: 0;
   width: 320px;
 }
+
+.aside__title {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 33px;
+  padding-left: 20px;
+}
+
+.aside__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: $dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+}

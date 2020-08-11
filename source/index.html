@@ -4,12 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>Кэт энерджи</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a class="pade-header__logo">
-      <img src="https://via.placeholder.com/150x150" alt="Логотип Кэт энерджи">
+    <a class="pade-header__logo" href="index.html">
+      <img src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+    </a>
+    <a class="pade-header__logo-name" href="index.html">
+      <img src="./img/logo-mobile-name.svg" width="101" height="18" alt="Логотип названия Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -33,23 +37,30 @@
 
   <main class="page__main">
     <div class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
-      <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <a class="promo__button" href="form.html">Подобрать программу</a>
+      <div class="promo__slide">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
+        <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        <img class="promo__picture" src="./img/index-can-mobile@2x.png" width="280" height="270" alt="Корм Cat Energy">
+        <a class="promo__button" href="form.html">Подобрать программу</a>
+      </div>
     </div>
     <section class="benefits">
       <h2 class="visually-hidden">Варианты программ</h2>
       <ul class="benefits__list">
         <li class="benefits__item">
-          <img src="#" width="36" height="50" alt="Логотип программы Slim">
-          <h3 class="benefits__title">Похудение</h3>
+          <div class="benefits__wrapper">
+            <img class="benefits__img" src="./img/icon-cat-slim.svg" width="36" height="50" alt="Логотип программы Slim">
+            <h3 class="benefits__title">Похудение</h3>
+          </div>
           <p class="benefits__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="benefits__link" href="./catalog.html"> Каталог Slim</a>
         </li>
         <li class="benefits__item">
-          <img src="#" width="67" height="50" alt="Логотип программы Pro">
-          <h3 class="benefits__title">Набор массы</h3>
+          <div class="benefits__wrapper">
+            <img class="benefits__img" src="./img/icon-cat-pro.svg" width="67" height="50" alt="Логотип программы Pro">
+            <h3 class="benefits__title">Набор массы</h3>
+          </div>
           <p class="benefits__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
           <a class="benefits__link" href="./catalog.html"> Каталог Pro</a>
@@ -62,16 +73,19 @@
         <h2 class="features__title">Как это работает</h2>
         <ul class="features__list">
           <li class="features__item features__item--one">
+            <img class="features__img" src="./img/advantage-leaf@2x.png" width="60" height="60" alt="Символ полезных веществ">
             <p class="features__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="features__item features__item--two">
-            <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
+            <img class="features__img" src="./img/advantage-powder@2x.png" width="60" height="60" alt="Символ приготовления">
+            <p class="features__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="features__item features__item--three">
+            <img class="features__img" src="./img/advantage-dining@2x.png" width="60" height="60" alt="Символ приема еды">
             <p class="features__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="features__item features__item--four">
+            <img class="features__img" src="./img/advantage-clock@2x.png" width="60" height="60" alt="Символ изменений">
             <p class="features__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -112,32 +126,43 @@
         <!--Здесь будет интерактивная карта -->
       </div>
       <div class="page-footer__wrapper">
-      <a class="page-footer__logo">
-        <img src="#" width="128" height="24" alt="Cat energy">
-      </a>
-      <div class="page-footer__social social">
-        <h2 class="visually-hidden">Давайте дружить!</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Мы в Вконтакте</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Мы в Инстаграме</span></a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в Фейсбуке</span></a>
-          </li>
-        </ul>
+        <div class="page-footer__information">
+          <a class="page-footer__logo">
+            <img class="page-footer__logo-img" src="./img/logo-footer.svg" width="128" height="24" alt="Cat energy">
+          </a>
+          <div class="page-footer__social social">
+            <h2 class="visually-hidden">Давайте дружить!</h2>
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link social__link--vkontakte" href="#">
+                  <span class="visually-hidden">Мы в Вконтакте</span>
+                  <img src="./img/icon-vk.svg" width="23" height="16" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--instagram" href="#">
+                  <span class="visually-hidden">Мы в Инстаграме</span>
+                  <img src="./img/icon-insta.svg" width="16" height="16" alt="Инстаграм">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="#">
+                  <span class="visually-hidden">Мы в Фейсбуке</span>
+                  <img src="./img/icon-fb.svg" width="22" height="22" alt="Фейсбук">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <a class="copyright__name-link" href="https://htmlacademy.ru/intensive/adaptive">
+              <p class="copyright__name">HTML Academy</p>
+            </a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__name-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <p class="copyright__name">HTML Academy</p>
-        </a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="#" width="27" height="34" alt="Логотип HTML Academy">
-        </a>
-      </div>
-    </div>
   </footer>
 
 </body>

@@ -1,7 +1,9 @@
 .aside {
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 25px;
   width: 320px;
+  background-color: $basic-grey;
 }
 
 .aside__title {
@@ -12,22 +14,24 @@
   line-height: 40px;
   margin: 0;
   margin-bottom: 33px;
+  padding-top: 27px;
   padding-left: 20px;
 }
 
 .aside__text {
   font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   color: $dark-grey;
-  font-size: 14px;
   line-height: 18px;
+  padding: 0 21px;
+  margin: 0;
+  margin-bottom: 39px;
 }
 
-.values__item-value {
+.aside__price {
   font-family: $font;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 42px;
 }

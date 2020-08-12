@@ -1,0 +1,22 @@
+.products-gift {
+  display: grid;
+  align-content: end;
+  justify-content: center;
+  height: 289px;
+  padding: 0;
+  margin-left: 20px;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  background-color: $basic-green;
+}
+
+.products-gift__text {
+  font-family: "Arial", sans-serif;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  width: 161px;
+  margin: 0;
+  margin-bottom: 43px;
+}

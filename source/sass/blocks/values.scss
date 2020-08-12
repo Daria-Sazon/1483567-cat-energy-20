@@ -1,0 +1,31 @@
+.values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 25px;
+}
+
+.values__item {
+  display: grid;
+  grid-template-columns: 124px;
+  justify-content: space-between;
+}
+
+.values__item-value {
+  display: grid;
+  font-family: $font;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+
+.values__item-name {
+  display: grid;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: $dark-grey;
+  justify-content: center;
+  margin: 0;
+}

@@ -1,0 +1,110 @@
+.program-form {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.program-form__subtitle {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 39px;
+  padding-left: 20px;
+  padding-right: 74px;
+}
+
+.program-form__fieldset {
+  border: none;
+  padding: 0;
+  padding-left: 20px;
+  margin-bottom: 27px;
+}
+
+.program-form__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 13px;
+  align-items: center;
+}
+
+.program-form__label {
+  font-family: $font;
+  color: $dark-grey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  padding-right: 9px;
+  text-transform: uppercase;
+}
+
+.program-form__text-input {
+  font-family: $font;
+  color: $dark-grey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  height: 45px;
+  text-transform: uppercase;
+  padding: 0;
+  padding-left: 15px;
+}
+
+.program-form__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.program-form__list-item {
+  margin-bottom: 13px;
+}
+
+.program-form__radio-label {
+  font-family: $font;
+  color: $dark-grey-2;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  padding-left: 16px;
+  text-transform: uppercase;
+}
+
+.program-form__title {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  width: 205px;
+  margin-bottom: 32px;
+}
+
+.program-form__textarea {
+  margin-top: 34px;
+  font-family: $font;
+  color: $dark-grey;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 280px;
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.program-form__checkbox-label {
+  font-family: $font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 16px;
+}

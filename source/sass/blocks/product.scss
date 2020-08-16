@@ -1,20 +1,22 @@
-.product__name {
-  color: $dark-grey-2;
-  padding: 0;
-  width: 90px;
-}
-
 .product__name-link {
   font-family: $font;
   color: $dark-grey-2;
   font-size: 16px;
   line-height: 20px;
+  padding: 0;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product__table {
+  display: flex;
   margin-bottom: 22px;
+  justify-content: center;
 }
 
 .product__table-row {
@@ -28,6 +30,11 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+   font-size: 16px;
+   margin-bottom: 14px;
+  }
 }
 
 .product__picture {

@@ -1,8 +1,19 @@
 .features {
   margin: 0 auto;
-  padding: 0;
-  width: 320px;
+  padding: 0 20px;
+  min-width: 280px;
   margin-bottom: 42px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 60px;
+  }
 }
 
 .features__title {
@@ -14,19 +25,42 @@
   margin: 0;
   margin-bottom: 38px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .features__item {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 60px 1fr;
   padding-bottom: 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    width: 249px;
+    padding-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .features__list {
   padding: 0;
   padding-left: 20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+  }
 }
 
 .features__description {
@@ -35,8 +69,20 @@
   color: $dark-grey;
   margin: 0;
   padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    padding-top: 31px;
+  }
 }
 
 .features__img {
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }

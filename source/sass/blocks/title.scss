@@ -5,9 +5,14 @@
   font-size: 36px;
   line-height: 36px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   padding-top: 27px;
   padding-bottom: 41px;
-  padding-left: 20px;
-  width: 300px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
 }

@@ -1,9 +1,19 @@
 .aside {
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   padding-bottom: 25px;
-  width: 320px;
+  min-width: 280px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0 60px;
+  }
 }
 
 .aside__title {
@@ -16,6 +26,11 @@
   margin-bottom: 33px;
   padding-top: 27px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .aside__text {
@@ -25,6 +40,11 @@
   padding: 0 21px;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .aside__price {
@@ -34,4 +54,9 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

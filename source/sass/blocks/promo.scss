@@ -5,15 +5,21 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.promo__slide {
-  width: 320px;
+  min-width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+    background-image: none;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0 60px;
+  }
 }
 
 .promo__title {
@@ -24,6 +30,15 @@
   line-height: 36px;
   padding-top: 27px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__slogan {
@@ -32,23 +47,36 @@
   text-transform: uppercase;
   margin-bottom: 29px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    color: $black;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .promo__picture {
-  padding-left: 20px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .promo__button {
   display: flex;
+  align-items: center;
   justify-content: center;
   color: $white;
   background: $basic_green;
   font-family: $font;
   line-height: 18px;
-  padding: 7px 0;
   width: 280px;
-  margin: 0;
-  margin-left: 20px;
+  height: 40px;
+  margin: 0 auto;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    width: 244px;
+    height: 54px;
+  }
 }

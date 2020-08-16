@@ -1,11 +1,17 @@
 .show-more {
   display: block;
   margin-top: 90px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 180px;
+  }
 }
 
 .show-more__button {
   color: $dark-grey;
   background-color: $basic-grey;
+  margin: 0 auto;
+  margin-bottom: 25px;
 }
 
 .show-more__name {
@@ -15,6 +21,13 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    padding: 0 56px;
+    margin-bottom: 23px;
+  }
 }
 
 .show-more__text {
@@ -23,4 +36,11 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    padding: 0 39px;
+    margin-bottom: 87px;
+  }
 }

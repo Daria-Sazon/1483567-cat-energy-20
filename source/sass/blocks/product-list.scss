@@ -64,11 +64,11 @@
 }
 
 .product-list__button {
-    @media (min-width: $tablet-width) {
-      width: 632px;
-    }
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
 
-    @media (min-width: $desktop-width) {
-      width: 244px;
-    }
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

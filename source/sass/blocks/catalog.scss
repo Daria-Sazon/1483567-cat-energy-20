@@ -45,6 +45,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

@@ -10,14 +10,14 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 708px;
     padding: 0 30px;
     background-image: none;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    width: 1220px;
     padding: 0 60px;
   }
 }
@@ -28,7 +28,6 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
   text-align: center;
   margin: 0;
   margin-bottom: 25px;

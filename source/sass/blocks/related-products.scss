@@ -1,8 +1,18 @@
 .related-products {
-  width: 320px;
+  min-width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+    padding: 0 60px;
+  }
 }
 
 .related-products__title {
@@ -15,4 +25,16 @@
   padding-top: 28px;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.related-products__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

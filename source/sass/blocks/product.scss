@@ -23,6 +23,14 @@
   display: flex;
   justify-content: space-between;
   width: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
 }
 
 .product__table-cell {
@@ -40,4 +48,30 @@
 .product__picture {
   width: 140px;
   height: 100%;
+}
+
+.product__name {
+  width: 90px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.product__picture-link {
+  display: flex;
+  justify-content: center;
+  background-color: $white;
+}
+
+.product__button {
+  @media (min-width: $tablet-width) {
+    width: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

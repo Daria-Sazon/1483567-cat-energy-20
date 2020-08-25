@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
+    margin: 0;
   }
 }
 
@@ -27,13 +28,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 40px;
   }
 }
 
 .program-form__fieldset {
   border: none;
   padding: 0;
-  padding-left: 20px;
   margin-bottom: 27px;
 }
 
@@ -90,15 +91,24 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .program-form__list-item {
   margin-bottom: 13px;
 
   @media (min-width: $desktop-width) {
+    width: 565px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.program-form__list-item--extra {
+  width: 221px;
 }
 
 .program-form__radio-label {
@@ -123,6 +133,8 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $special-grey;
+    width: 630px;
+    margin-left: 40px;
   }
 }
 
@@ -138,7 +150,8 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    min-width: 512px;
+    min-width: 555px;
+    padding-left: 40px;
   }
 }
 
@@ -151,11 +164,16 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 280px;
+  padding: 0;
   padding-top: 13px;
-  padding-left: 15px;
+  text-align: center;
+  border-color: $special-grey;
 
   @media (min-width: $tablet-width) {
-    min-width: 631px;
+    min-width: 612px;
+    text-align: left;
+    padding-left: 19px;
+    margin: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -194,7 +212,9 @@
 .program-form__list--extra {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    width: 565px;
     font-size: 20px;
     line-height: 30px;
   }

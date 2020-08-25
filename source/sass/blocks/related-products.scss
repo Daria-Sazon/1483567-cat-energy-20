@@ -5,12 +5,12 @@
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 708px;
     padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    width: 1220px;
     padding: 0 60px;
   }
 }
@@ -21,14 +21,14 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  padding-left: 20px;
-  padding-top: 28px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    margin-bottom: 80px;
+    padding-left: 40px;
   }
 }
 
@@ -36,5 +36,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    height: 288px;
+    margin: 0 auto;
   }
 }

@@ -1,16 +1,19 @@
 .catalog {
   margin: 0 auto;
+  margin-bottom: 28px;
   padding: 0 20px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
     padding: 0 30px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1220px;
+    width: 1220px;
     padding: 0 60px;
+    margin-bottom: 76px;
   }
 }
 
@@ -25,6 +28,9 @@
     grid-template-columns: 324px 324px;
     column-gap: 60px;
     row-gap: 59px;
+    justify-content: center;
+    min-width: 708px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,6 +38,7 @@
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
     row-gap: 63px;
+    width: 1220px;
   }
 }
 
@@ -45,6 +52,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

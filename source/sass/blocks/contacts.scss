@@ -6,12 +6,26 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $dark-grey-1;
-  margin: 0;
+  margin: 0 auto;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 171px;
+  }
 }
 
 .contacts__text {
   font-family: "Arial", sans-serif;
   line-height: 20px;
   color: $dark-grey;
-  margin: 0;
+  margin: 0 auto;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 159px;
+  }
 }

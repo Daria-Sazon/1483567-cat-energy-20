@@ -1,7 +1,19 @@
 .program-form {
-  width: 320px;
+  min-width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 60px;
+    margin: 0;
+  }
 }
 
 .program-form__subtitle {
@@ -12,22 +24,32 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 39px;
-  padding-left: 20px;
-  padding-right: 74px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
 }
 
 .program-form__fieldset {
   border: none;
   padding: 0;
-  padding-left: 20px;
   margin-bottom: 27px;
 }
 
 .program-form__wrapper {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  margin-bottom: 13px;
-  align-items: center;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.program-form__list--user {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .program-form__label {
@@ -39,6 +61,11 @@
   line-height: 18px;
   padding-right: 9px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__text-input {
@@ -52,16 +79,36 @@
   text-transform: uppercase;
   padding: 0;
   padding-left: 15px;
+  border: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+  }
 }
 
 .program-form__list-item {
   margin-bottom: 13px;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__list-item--extra {
+  width: 221px;
 }
 
 .program-form__radio-label {
@@ -73,6 +120,22 @@
   line-height: 18px;
   padding-left: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__fieldset--programs {
+  border-top: 1px solid $special-grey;
+  border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $special-grey;
+    width: 630px;
+    margin-left: 40px;
+  }
 }
 
 .program-form__title {
@@ -82,11 +145,17 @@
   font-size: 24px;
   line-height: 26px;
   width: 205px;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    min-width: 555px;
+    padding-left: 40px;
+  }
 }
 
 .program-form__textarea {
-  margin-top: 34px;
   font-family: $font;
   color: $dark-grey;
   font-style: normal;
@@ -95,8 +164,34 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 280px;
+  padding: 0;
   padding-top: 13px;
-  padding-left: 15px;
+  text-align: center;
+  border-color: $special-grey;
+
+  @media (min-width: $tablet-width) {
+    min-width: 612px;
+    text-align: left;
+    padding-left: 19px;
+    margin: 0 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1220px;
+  }
+}
+
+.program-form__textarea::placeholder {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-grey;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .program-form__checkbox-label {
@@ -107,9 +202,37 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.program-form__list--extra {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 565px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .program-form__note {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 565px;
+  }
+}
+
+.program-form__note-text {
   display: flex;
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -118,4 +241,8 @@
   font-weight: normal;
   justify-content: center;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

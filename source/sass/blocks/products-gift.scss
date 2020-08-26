@@ -4,10 +4,20 @@
   justify-content: center;
   height: 289px;
   padding: 0;
-  margin-left: 20px;
-  margin-top: 39px;
+  margin: 0 auto;
   margin-bottom: 35px;
   background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin: 0;
+  }
 }
 
 .products-gift__text {

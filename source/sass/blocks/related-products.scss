@@ -30,6 +30,10 @@
     margin-bottom: 80px;
     padding-left: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .related-products__wrapper {

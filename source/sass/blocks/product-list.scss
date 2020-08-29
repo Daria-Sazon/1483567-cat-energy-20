@@ -1,5 +1,6 @@
 .product-list {
   margin: 0 auto;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
   border-bottom: 1px solid $special-grey;
@@ -29,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     width: 286px;
+    margin-left: 115px;
   }
 }
 
@@ -42,6 +44,7 @@
     justify-content: space-between;
     padding: 0 37px;
     height: 140px;
+    border: 1px solid $special-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,12 +63,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
-  padding-top: 13px;
+  padding-top: 12px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     width: 161px;
+    padding-top: 17px;
   }
 }
 
@@ -81,6 +85,8 @@
 }
 
 .product-list__button {
+  margin-bottom: 18px;
+
   @media (min-width: $tablet-width) {
     width: 632px;
   }

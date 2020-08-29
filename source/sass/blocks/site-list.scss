@@ -7,7 +7,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 46px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -20,7 +19,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic_green;
     font-size: 20px;
     line-height: 30px;
     width: 478px;
@@ -31,4 +29,23 @@
   padding-top: 22px;
   padding-bottom: 24px;
   border-top: 1px solid $special-grey;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 1;
+    border-bottom: 2px solid $basic_green;
+  }
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    padding: 0;
+    padding-bottom: 8px;
+  }
 }

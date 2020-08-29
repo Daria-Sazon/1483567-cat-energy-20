@@ -34,10 +34,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 245px 245px 245px 245px;
-    column-gap: 80px;
-    row-gap: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
     width: 1220px;
   }
 }
@@ -50,13 +50,11 @@
   border-bottom: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr;
+    margin: 0;
   }
 }

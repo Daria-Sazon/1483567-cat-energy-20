@@ -22,3 +22,26 @@
     padding: 0 60px;
   }
 }
+
+.title-catalog {
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 80px;
+  }
+}
+
+.title--form {
+  margin-top: 45px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
+  }
+}

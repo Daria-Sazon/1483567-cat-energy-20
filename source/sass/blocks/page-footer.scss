@@ -13,8 +13,7 @@
 }
 
 .page-footer__contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-content: space-between;
   background-color: $white;
   min-width: 280px;
@@ -24,7 +23,7 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    min-width: 708px;
+    width: 625px;
     padding: 0;
     padding-top: 66px;
     margin-bottom: 51px;
@@ -70,4 +69,8 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    width: 280px;
+  }
 }

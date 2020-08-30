@@ -7,10 +7,15 @@
   margin: 0 auto;
   margin-bottom: 35px;
   background-color: $basic-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 200px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,4 +34,14 @@
   width: 161px;
   margin: 0;
   margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 43px;
+  }
 }

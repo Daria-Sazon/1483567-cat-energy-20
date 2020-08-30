@@ -11,7 +11,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 0 60px;
+    padding: 0;
   }
 }
 
@@ -21,13 +21,13 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 71px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 45px;
+    margin-bottom: 71px;
   }
 }
 
@@ -35,23 +35,66 @@
   background: $basic-grey;
   margin: 0;
   margin-top: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
     width: 708px;
+    height: 372px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
+    margin-bottom: 0;
   }
 }
 
 .benefits__wrapper {
-  display: grid;
-  grid-template-columns: 67px 1fr;
+  display: flex;
+  align-items: center;
   margin: 0;
   margin-bottom: 22px;
+  padding-top: 21px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.benefits__img {
+  min-width: 50px;
+  height: 53px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    width: 268px;
+    height: 192px;
+    margin: 0;
+    margin-top: 81px;
+    padding-right: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    width: 136px;
+    height: 100px;
+    margin: 0;
+    margin-top: 41px;
+    margin-left: 52px;
+    padding: 0;
+  }
 }
 
 .benefits__title {
@@ -62,17 +105,22 @@
   line-height: 37px;
   text-transform: uppercase;
   padding-left: 19px;
-  padding-top: 30px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding: 0;
+    padding-left: 52px;
+    margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 36px;
-    line-height: 36px;
+    margin: 0;
+    margin-top: 45px;
+    padding: 0;
+    text-align: left;
+    width: 355px;
   }
 }
 
@@ -81,18 +129,26 @@
   color: $dark-grey;
   line-height: 18px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 45px;
   padding-right: 33px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 377px;
+    padding: 0;
+    padding-left: 52px;
+    margin-bottom: 52px;
+    margin-top: -185px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
+    width: 465px;
+    margin: 0;
+    margin-bottom: 23px;
   }
 }
 
@@ -106,9 +162,16 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 0;
+    padding-left: 52px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {

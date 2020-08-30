@@ -18,17 +18,23 @@
   }
 }
 
-.pade-header__wrapper {
-  padding-left: 20px;
+.page-header__wrapper {
+  margin-bottom: 20px;
   text-decoration: none;
   height: 38px;
-  text-align: center;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     height: 51px;
+    margin-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
     height: 59px;
   }
+}
+
+.page-header__logo-name {
+  padding-left: 55px;
+  text-align: center;
 }

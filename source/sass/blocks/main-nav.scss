@@ -1,8 +1,4 @@
 .main-nav {
-  @media (max-width: $mobile-width) {
-    display: none;
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 40px;
   }

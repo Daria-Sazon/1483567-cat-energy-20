@@ -7,11 +7,13 @@
   text-transform: uppercase;
   color: $dark-grey-1;
   margin: 0 auto;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 25px;
     margin: 0;
+    width: 170px;
   }
 }
 
@@ -21,11 +23,13 @@
   color: $dark-grey;
   margin: 0 auto;
   text-align: start;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
     text-align: right;
+    width: 159px;
   }
 }

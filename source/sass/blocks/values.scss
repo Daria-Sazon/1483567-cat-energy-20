@@ -4,7 +4,8 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 365px;
+    width: 366px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,7 +14,11 @@
 }
 
 .values__item {
-  width: 124px;
+  width: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+  }
 }
 
 .values__item-value {
@@ -25,19 +30,39 @@
   justify-content: center;
   margin-bottom: 8px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 13px;
+  }
 }
 
 .values__item-name {
-  display: grid;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: $dark-grey;
   text-align: center;
+  width: 77px;
   margin: 0;
+  margin-left: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    width: 127px;
+    margin-left: 16px;
+  }
+}
+
+.values__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }

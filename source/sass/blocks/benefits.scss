@@ -92,7 +92,7 @@
     height: 100px;
     margin: 0;
     margin-top: 41px;
-    margin-left: 52px;
+    margin-left: 35px;
     padding: 0;
   }
 }
@@ -149,6 +149,16 @@
     width: 465px;
     margin: 0;
     margin-bottom: 23px;
+  }
+}
+
+.benefits__text--pro {
+  @media (min-width: $tablet-width) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 465px;
   }
 }
 

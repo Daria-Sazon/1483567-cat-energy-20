@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper page-header__wrapper--form">
       <a class="pade-header__logo" href="index.html">
         <img src="./img/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
       </a>
@@ -43,7 +43,7 @@
     <form class="program-form" action="https://echo.htmlacademy.ru" method="get">
       <p class="program-form__subtitle">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       <div class="program-form__wrapper">
-        <fieldset class="program-form__fieldset">
+        <fieldset class="program-form__fieldset program-form__fieldset--info">
           <ul class="program-form__list">
             <li class="program-form__list-item">
               <label class="program-form__label" for="pet-name">Имя:*</label>
@@ -61,37 +61,37 @@
         </fieldset>
         <fieldset class="program-form__fieldset program-form__fieldset--programs">
           <ul class="program-form__list program-form__list--programs">
-            <li class="program-form__list-item">
+            <li class="program-form__list-item program-form__list-item--programs">
               <input class="program-form__radio" type="radio" id="slimming" name="program" value="Похудение" checked>
               <label class="program-form__radio-label" for="slimming">Похудение</label>
             </li>
-            <li class="program-form__list-item">
+            <li class="program-form__list-item program-form__list-item--programs">
               <input class="program-form__radio" type="radio" id="gain-mass" name="program" value="Набор массы">
               <label class="program-form__radio-label" for="gain-mass">Набор массы</label>
             </li>
-            <li class="program-form__list-item">
+            <li class="program-form__list-item program-form__list-item--programs">
               <input class="program-form__radio" type="radio" id="unknown" name="program" value="Не знаю (Нужен ваш совет)">
               <label class="program-form__radio-label" for="unknown">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
       </div>
-      <fieldset class="program-form__fieldset program-form__fieldset--extra">
+      <fieldset class="program-form__fieldset program-form__fieldset--user">
         <legend class="program-form__title program-form__title--user ">Контактные данные (владельца кота)</legend>
         <ul class="program-form__list program-form__list--user">
         <li class="program-form__list-item">
-          <label class="program-form__label" for="email-user">E-mail:*</label>
+          <label class="program-form__label program-form__label--user" for="email-user">E-mail:*</label>
           <input class="program-form__text-input" id="email-user" type="email" name="email-user"
             placeholder="kuklachev@gmail.com" required>
         </li>
         <li class="program-form__list-item">
-          <label class="program-form__label" for="number">Телефон:*</label>
+          <label class="program-form__label program-form__label--user" for="number">Телефон:*</label>
           <input class="program-form__text-input" id="number" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
         </li>
         </ul>
       </fieldset>
-      <fieldset class="program-form__fieldset">
-        <legend class="program-form__title program-form__title--user">Комментарий</legend>
+      <fieldset class="program-form__fieldset program-form__fieldset--comment">
+        <legend class="program-form__title program-form__title--comment">Комментарий</legend>
         <label class="visually-hidden" for="text">Комментарий</label>
         <textarea class="program-form__textarea" id="text" rows="8" cols="80" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
@@ -129,7 +129,10 @@
     <h2 class="visually-hidden">Контакты компании Кэт энерджи</h2>
       <div class="page-footer__contacts contacts">
         <p class="contacts__invitation">Приглашаем<br>к сотрудничеству дилеров!</p>
-        <p class="contacts__text">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__text">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="map">
         <!--Здесь будет интерактивная карта -->

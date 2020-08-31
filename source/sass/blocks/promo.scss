@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    height: 852px;
+    height: 850px;
     padding: 0 30px;
     margin-bottom: 0;
     background-image: none;
@@ -50,7 +50,7 @@
     width: 414px;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 45px;
+    margin-top: 40px;
     margin-bottom: 40px;
     margin-left: 87px;
     padding: 0;
@@ -79,6 +79,10 @@
     margin-bottom: 49px;
     margin-left: 87px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .promo__picture {
@@ -88,17 +92,17 @@
 
   @media (min-width: $tablet-width) {
     order: 1;
-    width: 709px;
+    width: auto;
     height: 609px;
     margin: 0;
-    margin-top: 263px;
+    margin-top: 245px;
+    margin-left: 80px;
     position: absolute;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 375px;
-    width: 552px;
+    right: 330px;
     height: 499px;
     margin-top: 32px;
     text-align: center;
@@ -130,5 +134,9 @@
     margin: 0;
     margin-left: 83px;
     z-index: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 90px;
   }
 }

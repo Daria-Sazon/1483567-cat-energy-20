@@ -38,10 +38,12 @@
   @media (min-width: $tablet-width) {
     text-align: left;
     margin-bottom: 69px;
+    margin-left: 300px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: center;
+    margin: 0;
     margin-bottom: 43px;
   }
 }

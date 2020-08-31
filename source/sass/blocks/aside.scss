@@ -1,6 +1,6 @@
 .aside {
   margin: 0 auto;
-  padding-bottom: 25px;
+  padding-bottom: 32px;
   min-width: 280px;
   background-color: $basic-grey;
 
@@ -8,11 +8,14 @@
     min-width: 708px;
     padding: 0 30px;
     background-color: $white;
+    border-top: 1px solid $special_grey;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
     width: 1220px;
-    padding: 0 60px;
+    padding: 0;
+    margin-bottom: 90px;
   }
 }
 
@@ -48,7 +51,7 @@
   padding: 0 20px;
   padding-right: 21px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -61,6 +64,23 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     padding: 0;
+    margin-bottom: 85px;
+  }
+}
+
+.aside__wrapper-price {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 327px;
   }
 }
 
@@ -70,14 +90,73 @@
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    text-align: right;
+    margin-left: 167px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    margin: 0;
+  }
+}
+
+.aside__wrapper-compare {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 115px;
+  }
+}
+
+.aside__picture {
+  width: 320px;
+  height: 100%;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 536;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.aside__wrapper-button {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 58px;
+  padding-right: 49px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
+    margin-left: 90px;
+  }
+}
+
+.aside__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

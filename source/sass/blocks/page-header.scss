@@ -19,10 +19,9 @@
 }
 
 .page-header__wrapper {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-decoration: none;
   height: 38px;
-  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     height: 51px;
@@ -32,6 +31,10 @@
   @media (min-width: $desktop-width) {
     height: 59px;
   }
+}
+
+.page-header__wrapper--form {
+  margin-bottom: 18px;
 }
 
 .page-header__logo-name {

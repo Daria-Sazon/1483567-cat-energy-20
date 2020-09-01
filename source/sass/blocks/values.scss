@@ -1,4 +1,15 @@
 .values {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.values__wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -53,16 +64,5 @@
     line-height: 14px;
     width: 127px;
     margin-left: 16px;
-  }
-}
-
-.values__wrapper {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    margin-bottom: 80px;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: block;
   }
 }

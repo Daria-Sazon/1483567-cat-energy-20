@@ -7,13 +7,13 @@
   @media (min-width: $tablet-width) {
     min-width: 708px;
     padding: 0 30px;
-    margin-bottom: 55px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
 }
 
@@ -27,7 +27,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
-    row-gap: 59px;
+    row-gap: 80px;
     justify-content: center;
     min-width: 708px;
     border: none;
@@ -37,7 +37,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 45px;
+    row-gap: 60px;
     width: 1220px;
   }
 }

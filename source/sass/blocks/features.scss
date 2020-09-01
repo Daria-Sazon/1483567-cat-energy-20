@@ -1,13 +1,13 @@
 .features {
   margin: 0 auto;
   min-width: 280px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   background-color: $white;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     padding: 0 30px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +24,7 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 35px;
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +39,7 @@
 .features__item {
   display: grid;
   grid-template-columns: 60px 1fr;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -79,6 +79,7 @@
   color: $dark-grey;
   margin: 0;
   padding: 0 20px;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -89,11 +90,15 @@
 }
 
 .features__img {
+  width: 45px;
+  height: 47px;
+  padding: 7px;
   background-color: $basic-green;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
+    width: 48px;
+    height: 48px;
+    padding: 16px;
   }
 }
 

@@ -1,3 +1,9 @@
+.product {
+  @media (min-width: $tablet-width) {
+    padding-top: 28px;
+  }
+}
+
 .product__name-link {
   font-family: $font;
   color: $dark-grey-2;
@@ -53,14 +59,22 @@
   height: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 252px;
+    width: 324px;
+    height: auto;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: auto;
+    margin-bottom: 35px;
   }
 }
 
 .product__name {
   width: 90px;
   margin-top: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -81,7 +95,7 @@
 }
 
 .product__button {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     width: 248px;

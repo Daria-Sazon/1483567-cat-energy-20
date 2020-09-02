@@ -47,3 +47,29 @@
     height: 80px;
   }
 }
+
+.contacts__map-marker {
+  position: relative;
+  top: 115px;
+  left: 127px;
+  width: 65px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    top: 120px;
+    left: 320px;
+    width: 125px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 139px;
+    left: 890px;
+  }
+}
+
+.contacts {
+  @media (max-width: $tablet-width) {
+    background-color: $basic-grey;
+  }
+}

@@ -2,6 +2,55 @@
   background-color: $white;
 }
 
+.page-footer__wrapper-contacts {
+  height: 475px;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 600px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 400px;
+      top: 2260px;
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-image: url("../img/bg-map-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-color: $white;
+    }
+  }
+}
+
+.page-footer__wrapper-contacts--catalog {
+  @media (min-width: $desktop-width) {
+    top: 1980px;
+  }
+}
+
+.page-footer__wrapper-contacts--form {
+  @media (min-width: $desktop-width) {
+    top: 1600px;
+  }
+}
+
 .page-footer__wrapper {
   width: 100%;
   background-color: $basic-grey;
@@ -10,6 +59,11 @@
     display: flex;
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: 300px;
+  }
 }
 
 .page-footer__contacts {
@@ -17,16 +71,16 @@
   justify-content: space-between;
   background-color: $white;
   min-width: 280px;
+  height: 85px;
   margin: 0 auto;
-  margin-bottom: 22px;
+  margin-bottom: 25px;
   padding: 0 20px;
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
-    width: 625px;
-    padding: 0;
-    padding-top: 66px;
-    margin-bottom: 51px;
+    padding: 0 70px;
+    padding-top: 65px;
+    padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,8 +88,9 @@
     padding-top: 66px;
     padding-left: 75px;
     padding-right: 80px;
-    padding-bottom: 60px;
-    margin-bottom: 125px;
+    padding-bottom: 55px;
+    margin-top: 95px;
+    margin-bottom: 90px;
     margin-left: 110px;
   }
 }
@@ -46,6 +101,7 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
+  padding-bottom: 20px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -55,11 +111,13 @@
     align-items: center;
     min-width: 708px;
     padding: 0 30px;
+    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1220px;
     padding: 0 60px;
+    padding-top: 22px;
   }
 }
 

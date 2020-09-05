@@ -99,6 +99,17 @@
   flex-grow: 1;
   box-sizing: border-box;
 
+  &:active {
+    border: 1px solid $dark-grey;
+  }
+
+  &:active + .program-form__icon-mail,
+  &:active + .program-form__icon-phone,
+  &:focus + .program-form__icon-mail,
+  &:focus + .program-form__icon-phone {
+    fill: $basic-green;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -168,6 +179,10 @@
 .program-form__list-item--extra {
   padding-left: 17px;
   width: 221px;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -424,5 +439,39 @@
 
   @media (min-width: $desktop-width) {
     width: 568px;
+  }
+}
+
+.program-form__icon-mail {
+  position: absolute;
+  left: 265px;
+  padding-top: 16px;
+  fill: $dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    left: 665px;
+    padding-top: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 640px;
+    padding-top: 15px;
+  }
+}
+
+.program-form__icon-phone {
+  position: absolute;
+  left: 266px;
+  padding-top: 13px;
+  fill: $dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    left: 665px;
+    padding-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 1295px;
+    padding-top: 15px;
   }
 }

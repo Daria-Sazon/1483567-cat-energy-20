@@ -83,6 +83,15 @@
 .page-footer__logo-img {
   margin-bottom: 52px;
   padding-top: 39px;
+
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__copyright {

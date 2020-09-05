@@ -13,13 +13,27 @@
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+  padding-top: 10px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
-  padding-left: 22px;
-  width: 27px;
+  padding-left: 10px;
+  margin-bottom: 23px;
 }
 
-.copyright__link svg {
-  height: 39px;
+.copyright__logo-html {
+  fill: $special-dark-grey;
+
+  &:focus,
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

@@ -190,3 +190,17 @@
     line-height: 30px;
   }
 }
+
+.benefits__arrow {
+  height: 11px;
+  margin-left: 9px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+    padding-bottom: 5px;
+  }
+}

@@ -46,10 +46,37 @@
     grid-template-columns: 1fr;
     width: 249px;
     padding-bottom: 57px;
+    background-image: url("../img/background-1.png");
+    background-repeat: no-repeat;
+    background-position: 120px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 230px;
+  }
+}
+
+.features__item:nth-child(2) {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-2.png");
+    background-repeat: no-repeat;
+    background-position: 120px;
+  }
+}
+
+.features__item:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-3.png");
+    background-repeat: no-repeat;
+    background-position: 120px;
+  }
+}
+
+.features__item:nth-child(4) {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/background-4.png");
+    background-repeat: no-repeat;
+    background-position: 120px;
   }
 }
 

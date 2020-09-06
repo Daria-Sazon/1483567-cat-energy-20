@@ -22,12 +22,12 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     padding-left: 40px;
   }
 
@@ -44,5 +44,46 @@
     height: 288px;
     margin: 0 auto;
     margin-bottom: 85px;
+  }
+}
+
+.related-products__span::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 19%;
+  height: 2px;
+  top: -42px;
+  left: 245px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    width: 48%;
+    top: -90px;
+    left: 375px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 78%;
+    top: -90px;
+    left: 290px;
+  }
+}
+
+.related-products__span::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 5%;
+    height: 2px;
+    top: -90px;
+    left: -35px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 7%;
+    left: -120px;
   }
 }

@@ -8,7 +8,7 @@
   min-width: 280px;
   height: 305px;
   margin: 0 auto;
-  margin-bottom: 197px;
+  margin-bottom: 195px;
   padding: 0;
 
   @media (min-resolution: 2dppx) {
@@ -19,7 +19,7 @@
     width: 708px;
     height: 845px;
     padding: 0 30px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
     background-image: none;
     background-color: $white;
 
@@ -66,7 +66,7 @@
     width: 414px;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 38px;
+    margin-top: 60px;
     margin-bottom: 40px;
     margin-left: 87px;
     padding: 0;
@@ -105,9 +105,8 @@
 }
 
 .promo__picture {
+  width: auto;
   margin: 0 auto;
-  margin-bottom: 3px;
-  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -117,11 +116,12 @@
     margin-top: -28px;
     padding: 0;
     position: absolute;
+    left: 65px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 330px;
+    left: 555px;
     height: 499px;
     margin-top: -315px;
     text-align: center;

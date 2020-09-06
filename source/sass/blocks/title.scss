@@ -28,15 +28,15 @@
   border-top: 1px solid $special-grey;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
-    margin-bottom: 78px;
+    margin-top: 38px;
+    margin-bottom: 165px;
     padding-top: 0;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 165px;
   }
 }
 
@@ -46,12 +46,12 @@
   padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 40px;
+    margin-top: 67px;
     margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 75px;
+    margin-top: 80px;
     margin-bottom: 58px;
   }
 }

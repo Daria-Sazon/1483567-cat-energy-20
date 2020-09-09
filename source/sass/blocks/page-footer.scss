@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    height: 550px;
+  }
 }
 
 .page-footer__wrapper {
@@ -10,6 +14,20 @@
     display: flex;
     flex-direction: row;
     padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -200px;
+    bottom: 0;
+  }
+}
+
+.page-footer__wrapper-contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -200px;
+    bottom: 0;
   }
 }
 
@@ -30,28 +48,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     width: 415px;
     padding-top: 66px;
     padding-left: 75px;
     padding-right: 80px;
     padding-bottom: 55px;
-    left: 110px;
-    top: 2350px;
-  }
-}
-
-.page-footer__contacts--form {
-  @media (min-width: $desktop-width) {
-    left: 110px;
-    top: 1700px;
-  }
-}
-
-.page-footer__contacts--catalog {
-  @media (min-width: $desktop-width) {
-    left: 110px;
-    top: 2070px;
+    left: -325px;
+    top: 300px;
   }
 }
 

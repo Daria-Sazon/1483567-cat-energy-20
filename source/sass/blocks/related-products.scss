@@ -1,17 +1,27 @@
 .related-products {
   min-width: 280px;
   margin: 0 auto;
-  padding: 0 20px;
-  background-color: $white;
 
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 0 30px;
-  }
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 2px;
+    top: 15px;
+    z-index: -1;
+    background-color: $basic-green;
 
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-    padding: 0 60px;
+    @media (min-width: $tablet-width) {
+      top: 24px;
+      left: 50%;
+      margin-left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1220px;
+      padding: 0 110px;
+    }
   }
 }
 
@@ -21,22 +31,33 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
-  margin: 0 auto;
-  margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 33px;
+  background-color: $white;
+  width: 248px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin-bottom: 65px;
-    padding-left: 40px;
+    margin: 0;
+    margin-bottom: 78px;
+    margin-left: 30px;
+    padding: 0 37px;
+    width: 338px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    width: 413px;
+    text-align: center;
+    margin-left: 70px;
   }
 }
 
 .related-products__wrapper {
+  padding: 0 20px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -44,46 +65,5 @@
     height: 288px;
     margin: 0 auto;
     margin-bottom: 85px;
-  }
-}
-
-.related-products__span::after {
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 19%;
-  height: 2px;
-  top: -42px;
-  left: 245px;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    width: 48%;
-    top: -90px;
-    left: 375px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 78%;
-    top: -90px;
-    left: 290px;
-  }
-}
-
-.related-products__span::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    top: -90px;
-    left: -35px;
-    background-color: $basic-green;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 7%;
-    left: -120px;
   }
 }

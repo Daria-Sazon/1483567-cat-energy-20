@@ -50,7 +50,7 @@
 
 .contacts__map iframe {
   box-sizing: border-box;
-  width: 100%;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -78,9 +78,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 2385px;
-    left: 900px;
+    position: relative;
+    top: -15px;
+    left: -540px;
   }
 }
 
@@ -90,20 +90,7 @@
   }
 }
 
-.contacts__map-marker--form {
-  @media (min-width: $desktop-width) {
-    top: 1735px;
-  }
-}
-
-.contacts__map-marker--catalog {
-  @media (min-width: $desktop-width) {
-    top: 2110px;
-  }
-}
-
 .contacts__map {
-  width: 100%;
   height: 362px;
   background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@1x.png");
   background-position: center;
@@ -126,7 +113,6 @@
     @media (min-width: $desktop-width) {
       height: 400px;
       display: flex;
-      justify-content: space-around;
       align-items: center;
       background-image: url("../img/bg-map-desktop@1x.png");
       background-repeat: no-repeat;

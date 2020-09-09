@@ -20,6 +20,10 @@
   margin: 0 auto;
   margin-bottom: 25px;
 
+  &:hover {
+    background-color: $basic-grey;
+  }
+
   @media (min-width: $tablet-width) {
     width: 248px;
     margin-bottom: 38px;

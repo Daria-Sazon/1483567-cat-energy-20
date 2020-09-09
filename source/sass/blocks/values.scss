@@ -68,11 +68,13 @@
   width: 77px;
   margin: 0;
   margin-left: 20px;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     width: 127px;
     margin-left: 16px;
+    background-color: $white;
   }
 }

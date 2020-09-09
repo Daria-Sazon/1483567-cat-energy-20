@@ -52,6 +52,8 @@
 }
 
 .program-form__list--user {
+  width: 300px;
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
@@ -79,6 +81,7 @@
 
 .program-form__label--user {
   padding-right: 11px;
+  min-width: 50px;
 
   @media (min-width: $tablet-width) {
     padding-right: 18px;
@@ -99,8 +102,10 @@
   border: 1px solid $special-grey;
   flex-grow: 1;
   box-sizing: border-box;
+  outline: none;
 
-  &:active {
+  &:active,
+  &:focus {
     border: 1px solid $dark-grey;
   }
 
@@ -171,6 +176,10 @@
 }
 
 .program-form__list-item--programs {
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 18px;
     padding-left: 40px;
@@ -283,13 +292,36 @@
 }
 
 .program-form__fieldset--extra {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -50px;
+    height: 2px;
+    margin: 0;
+    left: 6%;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 100vw;
+      top: -75px;
+      left: 45%;
+      margin-left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 48%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 36px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 40px;
   }
 }
@@ -297,17 +329,60 @@
 .program-form__fieldset--user {
   margin-bottom: 16px;
 
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: -70px;
+    height: 2px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 100vw;
+      top: 940px;
+      left: 50%;
+      margin-left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 715px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 48px;
+    margin-bottom: 47px;
   }
 }
 
 .program-form__fieldset--comment {
-  margin-bottom: 27px;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    height: 2px;
+    top: -45px;
+    margin: 0;
+    left: 6%;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      width: 100vw;
+      top: -87px;
+      left: 45%;
+      margin-left: -50vw;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 50%;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 48px;
@@ -335,128 +410,51 @@
 }
 
 .program-form__title--extra {
-  margin-bottom: 10px;
+  width: 110px;
+  margin-bottom: 40px;
+  padding-right: 25px;
+  position: relative;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 25px;
-    margin-left: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 620px;
-    margin-bottom: 25px;
-    margin-left: -95px;
+    margin-bottom: 60px;
+    min-width: 211px;
+    margin-left: -40px;
+    padding: 0 40px;
   }
 }
 
 .program-form__title--user {
-  margin-bottom: 5px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-    margin-left: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 620px;
-    margin-bottom: 40px;
-    margin-left: -95px;
-  }
-}
-
-.program-form__title--user::after {
-  content: "";
+  margin-bottom: 30px;
   position: relative;
-  display: inline-block;
-  width: 46%;
-  height: 2px;
-  top: -58px;
-  left: 205px;
-  background-color: $basic-green;
+  background-color: $white;
 
   @media (min-width: $tablet-width) {
-    width: 26%;
-    top: -45px;
-    left: 580px;
+    margin-bottom: 77px;
+    margin-left: -30px;
+    padding-left: 30px;
+    padding-right: 10px;
+    width: 580px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 125%;
-    top: -48px;
-    left: 645px;
-  }
-}
-
-.program-form__title--user::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    top: -10px;
-    left: -40px;
-    background-color: $basic-green;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 15%;
-    left: -40px;
+    width: 580px;
+    margin-bottom: 74px;
   }
 }
 
 .program-form__title--comment {
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
-    margin-left: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 40px;
-    margin-left: -85px;
-  }
-}
-
-.program-form__title--comment::after {
-  content: "";
+  margin-bottom: 30px;
   position: relative;
-  display: inline-block;
-  width: 75%;
-  height: 2px;
-  top: -32px;
-  left: 145px;
-  background-color: $basic-green;
+  background-color: $white;
+  width: 145px;
 
   @media (min-width: $tablet-width) {
-    width: 86%;
-    top: -45px;
-    left: 250px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 200%;
-    top: -48px;
-    left: 305px;
-  }
-}
-
-.program-form__title--comment::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    top: -10px;
-    left: -40px;
-    background-color: $basic-green;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 15%;
-    left: -39px;
+    margin-bottom: 75px;
+    min-width: 220px;
+    margin-left: -40px;
+    padding-left: 40px;
+    padding-right: 35px;
   }
 }
 
@@ -469,12 +467,14 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 280px;
-  height: 150px;
+  min-height: 150px;
   padding: 0;
   padding-top: 13px;
   text-align: center;
   border-color: $special-grey;
   box-sizing: border-box;
+  outline: none;
+  resize: vertical;
 
   @media (min-width: $tablet-width) {
     min-width: 631px;
@@ -482,7 +482,7 @@
     padding-left: 19px;
     padding-top: 10px;
     margin-bottom: 15px;
-    height: 175px;
+    min-height: 175px;
   }
 
   @media (min-width: $desktop-width) {
@@ -512,17 +512,12 @@
     margin-top: -5px;
     width: 30px;
     height: 30px;
-    left: 20px;
+    left: 1px;
     border: 1px solid $special-grey;
 
     @media (min-width: $tablet-width) {
       width: 40px;
       height: 40px;
-      left: 70px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 110px;
     }
   }
 
@@ -533,15 +528,11 @@
     background-repeat: no-repeat;
     width: 18px;
     height: 14px;
-    left: 26px;
+    left: 6px;
 
     @media (min-width: $tablet-width) {
-      left: 80px;
+      left: 10px;
       margin-top: 8px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 123px;
     }
   }
 }
@@ -591,47 +582,6 @@
   }
 }
 
-.program-form__title--extra::after {
-  content: "";
-  position: relative;
-  display: inline-block;
-  width: 66%;
-  height: 2px;
-  top: -35px;
-  left: 165px;
-  background-color: $basic-green;
-
-  @media (min-width: $tablet-width) {
-    width: 80%;
-    top: -46px;
-    left: 280px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 174%;
-    top: -48px;
-    left: 345px;
-  }
-}
-
-.program-form__title--extra::before {
-  @media (min-width: $tablet-width) {
-    content: "";
-    position: relative;
-    display: inline-block;
-    width: 5%;
-    height: 2px;
-    top: -10px;
-    left: -40px;
-    background-color: $basic-green;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 15%;
-    left: -39px;
-  }
-}
-
 .program-form__note {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -642,7 +592,7 @@
 
   @media (min-width: $desktop-width) {
     width: 830px;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
   }
 }
 
@@ -678,35 +628,37 @@
 }
 
 .program-form__icon-mail {
-  position: absolute;
-  left: 265px;
+  position: relative;
+  left: -34px;
   padding-top: 16px;
   fill: $dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    left: 665px;
+    left: -38px;
+    margin-right: -18px;
     padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 640px;
+    left: -33px;
     padding-top: 15px;
   }
 }
 
 .program-form__icon-phone {
-  position: absolute;
-  left: 266px;
+  position: relative;
+  left: -30px;
   padding-top: 13px;
   fill: $dark-grey-2;
 
   @media (min-width: $tablet-width) {
-    left: 665px;
-    padding-top: 15px;
+    left: -38px;
+    margin-right: -18px;
+    padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 1295px;
+    left: -35px;
     padding-top: 15px;
   }
 }

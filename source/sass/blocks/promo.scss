@@ -31,10 +31,9 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     height: 696px;
-    position: absolute;
     padding: 0 110px;
-    margin: 0;
-    margin-bottom: 165px;
+    margin: 0 auto;
+    margin-bottom: 80px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: 720px 696px;
     background-position: right;
@@ -59,7 +58,7 @@
   text-align: center;
   margin: 0;
   margin-bottom: 25px;
-  padding-top: 27px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     color: $black;
@@ -107,6 +106,9 @@
 .promo__picture {
   width: auto;
   margin: 0 auto;
+  position: relative;
+  left: 50%;
+  margin-left: -160px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -116,13 +118,14 @@
     margin-top: -28px;
     padding: 0;
     position: absolute;
-    left: 65px;
+    left: 50%;
+    margin-left: -320px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 555px;
     height: 499px;
+    margin-left: -160px;
     margin-top: -315px;
     text-align: center;
   }

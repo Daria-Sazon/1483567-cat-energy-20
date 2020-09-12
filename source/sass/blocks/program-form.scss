@@ -538,7 +538,7 @@
     margin-top: -5px;
     width: 30px;
     height: 30px;
-    left: 0px;
+    left: 0;
     border: 1px solid $special-grey;
     box-sizing: border-box;
 
@@ -597,10 +597,10 @@
       margin-left: 25px;
     }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-left: 12px;
-  }
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      padding-left: 12px;
+    }
   }
 }
 

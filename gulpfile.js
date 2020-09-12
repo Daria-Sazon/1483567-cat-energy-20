@@ -5,23 +5,14 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
-const csso = require("csso");
+const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-
-const build = gulp.series(
-  "clean",
-  "copy",
-  "css",
-  "sprite",
-  "createWebp",
-  "html"
-);
-
-exports.build = build;
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 
 // Clean
 
@@ -47,6 +38,16 @@ const copy = () => {
 
 exports.copy = copy;
 
+// HTML
+
+const html = () => {
+  return gulp.src("source/*.html")
+  .pipe(posthtml([
+    include()
+  ]))
+  .pipe(gulp.dest("build"))
+}
+
 // Styles
 
 const styles = () => {
@@ -57,6 +58,7 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("styles.min.css"))
     .pipe(sourcemap.write("."))
@@ -95,6 +97,19 @@ const sprite = () => {
 }
 
 exports.sprite = sprite;
+
+// Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  styles,
+  sprite,
+  createWebp,
+  html
+);
+
+exports.build = build;
 
 // Server
 

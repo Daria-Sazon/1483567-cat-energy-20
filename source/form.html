@@ -40,7 +40,7 @@
   </svg>
 
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper page-header__wrapper--form">
       <a class="pade-header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -49,7 +49,7 @@
         </picture>
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -93,15 +93,15 @@
         <fieldset class="program-form__fieldset program-form__fieldset--programs">
           <ul class="program-form__list program-form__list--programs">
             <li class="program-form__list-item program-form__list-item--programs">
-              <input class="program-form__radio" type="radio" id="slimming" name="program" value="Похудение" checked>
+              <input class="program-form__radio visually-hidden" type="radio" id="slimming" name="program" value="Похудение" checked>
               <label class="program-form__radio-label" for="slimming">Похудение</label>
             </li>
             <li class="program-form__list-item program-form__list-item--programs">
-              <input class="program-form__radio" type="radio" id="gain-mass" name="program" value="Набор массы">
+              <input class="program-form__radio visually-hidden" type="radio" id="gain-mass" name="program" value="Набор массы">
               <label class="program-form__radio-label" for="gain-mass">Набор массы</label>
             </li>
             <li class="program-form__list-item program-form__list-item--programs">
-              <input class="program-form__radio" type="radio" id="unknown" name="program" value="Не знаю (Нужен ваш совет)">
+              <input class="program-form__radio visually-hidden" type="radio" id="unknown" name="program" value="Не знаю (Нужен ваш совет)">
               <label class="program-form__radio-label" for="unknown">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -118,7 +118,7 @@
             <use xlink:href="#icon-mail"></use>
           </svg>
         </li>
-        <li class="program-form__list-item">
+        <li class="program-form__list-item program-form__list-item--tel">
           <label class="program-form__label program-form__label--user" for="number">Телефон:*</label>
           <input class="program-form__text-input" id="number" type="tel" name="number" placeholder="8 (960) 900-60-90" required>
           <svg class="program-form__icon-phone" width="20" height="20">
@@ -130,26 +130,26 @@
       <fieldset class="program-form__fieldset program-form__fieldset--comment">
         <legend class="program-form__title program-form__title--comment">Комментарий</legend>
         <label class="visually-hidden" for="text">Комментарий</label>
-        <textarea class="program-form__textarea" id="text" rows="8" cols="80" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <textarea class="program-form__textarea" style="width:100%" id="text" rows="8" cols="80" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="program-form__fieldset program-form__fieldset--extra">
         <legend class="program-form__title program-form__title--extra">Дополнительно</legend>
         <ul class="program-form__list program-form__list--extra">
           <li class="program-form__list-item program-form__list-item--extra">
-            <input class="program-form__checkbox" type="checkbox" id="sugar" name="sugar" checked>
+            <input class="program-form__checkbox visually-hidden" type="checkbox" id="sugar" name="sugar" checked>
             <label class="program-form__checkbox-label" for="sugar">Сахарозаменитель</label>
           </li>
           <li class="program-form__list-item program-form__list-item--extra">
-            <input class="program-form__checkbox" type="checkbox" id="water" name="water">
-            <label class="program-form__checkbox-label" for="water">Питьевая вода</label>
+            <input class="program-form__checkbox visually-hidden" type="checkbox" id="water" name="water">
+            <label class="program-form__checkbox-label program-form__checkbox-label--column" for="water">Питьевая вода</label>
           </li>
           <li class="program-form__list-item program-form__list-item--extra">
-            <input class="program-form__checkbox" type="checkbox" id="milk" name="milk">
+            <input class="program-form__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
             <label class="program-form__checkbox-label" for="milk">Молоко</label>
           </li>
           <li class="program-form__list-item program-form__list-item--extra">
-            <input class="program-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-            <label class="program-form__checkbox-label" for="vitamins">Витамины</label>
+            <input class="program-form__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+            <label class="program-form__checkbox-label program-form__checkbox-label--column" for="vitamins">Витамины</label>
           </li>
         </ul>
       </fieldset>
@@ -165,7 +165,7 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Контакты компании Кэт энерджи</h2>
     <div class="page-footer__wrapper-contacts">
-      <div class="page-footer__contacts contacts page-footer__contacts--form">
+      <div class="page-footer__contacts contacts">
         <p class="contacts__invitation">Приглашаем<br>к сотрудничеству дилеров!</p>
         <div class="contacts__wrapper">
           <p class="contacts__text">ул. Большая Конюшенная, д. 19/8</p>
@@ -176,7 +176,7 @@
         <iframe class="contacts__google-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
           width="320" height="362" allowfullscreen></iframe>
-        <img class="contacts__map-marker contacts__map-marker--form" src="img/map-pin.png" width="57" height="55" alt="Маркер локации">
+        <img class="contacts__map-marker" src="img/map-pin.png" width="57" height="55" alt="Маркер локации">
       </div>
     </div>
       <div class="page-footer__wrapper">
@@ -223,5 +223,6 @@
         </div>
       </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

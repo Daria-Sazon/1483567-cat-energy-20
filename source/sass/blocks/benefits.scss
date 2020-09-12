@@ -12,7 +12,6 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0;
-    padding-top: 777px;
   }
 }
 
@@ -22,7 +21,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,8 +58,8 @@
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 22px;
-  padding-top: 21px;
+  margin-bottom: 24px;
+  padding-top: 24px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
@@ -68,33 +67,90 @@
     padding: 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom: 100px;
+  }
+}
+
+.benefits__wrapper-img {
+  width: 50px;
+  height: 50px;
+  background-color: $basic-green;
+  border-radius: 50%;
+  margin-left: 22px;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+    left: 445px;
+    top: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    position: static;
+    margin-left: 52px;
+    margin-top: 45px;
+  }
+}
+
+.benefits__wrapper-img--pro {
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    position: relative;
+    left: 450px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    position: static;
+    margin-left: 52px;
+    margin-top: 45px;
   }
 }
 
 .benefits__img {
-  min-width: 50px;
-  height: 53px;
-  margin-left: 20px;
+  padding-left: 7px;
+  margin-top: -1px;
 
   @media (min-width: $tablet-width) {
-    order: 1;
-    width: 268px;
+    width: 140px;
     height: 192px;
-    margin: 0;
-    margin-top: 81px;
-    padding-right: 28px;
+    padding-left: 30px;
+    margin-top: -12px;
   }
 
   @media (min-width: $desktop-width) {
-    order: 0;
-    width: 136px;
-    height: 100px;
-    margin: 0;
-    margin-top: 41px;
-    margin-left: 35px;
-    padding: 0;
+    width: 70px;
+    height: 97px;
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+}
+
+.benefits__img--pro {
+  padding: 0;
+  margin: 0;
+  margin-left: -10px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 112px;
+    margin-left: -38px;
+    margin-top: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 56px;
+    padding-left: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -112,16 +168,18 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0;
-    padding-left: 52px;
-    margin-top: -80px;
+    padding-left: 50px;
+    width: 206px;
+    position: relative;
+    right: 450px;
+    top: -5px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    margin-top: 45px;
+    margin-top: 50px;
     padding: 0;
-    text-align: left;
-    width: 355px;
+    left: -150px;
   }
 }
 
@@ -129,27 +187,30 @@
   font-family: "Arial", sans-serif;
   color: $dark-grey;
   line-height: 18px;
-  margin: 0;
-  margin-bottom: 45px;
-  padding-right: 33px;
-  padding-left: 20px;
+  margin: 0 20px;
+  margin-bottom: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     width: 377px;
     padding: 0;
-    padding-left: 52px;
-    margin-bottom: 52px;
-    margin-top: -185px;
+    padding-left: 32px;
+    border: none;
+    position: relative;
+    top: -63px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 24px;
     width: 465px;
+    padding: 0;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+    margin-left: 50px;
   }
 }
 
@@ -183,17 +244,21 @@
     padding: 0;
     padding-left: 52px;
     text-align: left;
+    position: relative;
+    top: -30px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    top: -60px;
   }
 }
 
 .benefits__arrow {
   height: 11px;
   margin-left: 9px;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     margin-left: 15px;

@@ -1,25 +1,26 @@
 .catalog {
   margin: 0 auto;
-  margin-bottom: 28px;
-  padding: 0 20px;
+  margin-bottom: 25px;
+  padding: 0;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
     padding: 0 30px;
-    margin-bottom: 67px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 60px;
-    margin-bottom: 75px;
+    margin-bottom: 74px;
   }
 }
 
 .catalog__list {
+  width: 280px;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   border-top: 1px solid $special-grey;
 
@@ -27,7 +28,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
-    row-gap: 65px;
+    row-gap: 139px;
     justify-content: center;
     min-width: 708px;
     border: none;
@@ -37,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 60px;
+    row-gap: 145px;
     width: 1220px;
   }
 }
@@ -51,7 +52,9 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
+    margin: 0;
     border: none;
+    background-color: $basic-grey;
   }
 
   @media (min-width: $desktop-width) {

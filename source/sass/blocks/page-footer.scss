@@ -1,5 +1,9 @@
 .page-footer {
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    height: 550px;
+  }
 }
 
 .page-footer__wrapper {
@@ -9,6 +13,21 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -200px;
+    bottom: 0;
+  }
+}
+
+.page-footer__wrapper-contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+    top: -200px;
+    bottom: 0;
   }
 }
 
@@ -20,37 +39,23 @@
   height: 85px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 28px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
-    padding-top: 65px;
+    padding-top: 63px;
     padding-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    position: relative;
     width: 415px;
-    padding-top: 66px;
+    padding-top: 60px;
     padding-left: 75px;
     padding-right: 80px;
     padding-bottom: 55px;
-    left: 110px;
-    top: 2450px;
-  }
-}
-
-.page-footer__contacts--form {
-  @media (min-width: $desktop-width) {
-    left: 110px;
-    top: 1790px;
-  }
-}
-
-.page-footer__contacts--catalog {
-  @media (min-width: $desktop-width) {
-    left: 110px;
-    top: 2070px;
+    left: -325px;
+    top: 300px;
   }
 }
 
@@ -60,7 +65,6 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
-  padding-bottom: 20px;
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
@@ -68,21 +72,21 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-width: 708px;
+    width: 100%;
     padding: 0 30px;
-    padding-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 1220px;
-    padding: 0 60px;
-    padding-top: 22px;
+    padding: 0 110px;
+    padding-top: 8px;
   }
 }
 
 .page-footer__logo-img {
-  margin-bottom: 52px;
-  padding-top: 39px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
 
   &:focus,
   &:hover {
@@ -92,21 +96,42 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: auto;
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
+  border-top: 1px solid $border-grey;
 
-  @media (max-width: $mobile-width) {
-    width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    margin: 0;
+    border: none;
   }
 }
 
 .page-footer__social {
+  width: 100%;
+  padding-top: 21px;
+  border-top: 1px solid $border-grey;
+
   @media (min-width: $tablet-width) {
     padding-top: 20px;
-    padding-left: 22px;
+    padding-left: 30px;
+    padding-right: 25px;
+    border: none;
   }
 }

@@ -3,12 +3,14 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-top: 87px;
+    padding-top: 55px;
     border: 2px solid $special-grey;
+    background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    padding: 0;
   }
 }
 
@@ -17,6 +19,10 @@
   background-color: $basic-grey;
   margin: 0 auto;
   margin-bottom: 25px;
+
+  &:hover {
+    background-color: $basic-grey;
+  }
 
   @media (min-width: $tablet-width) {
     width: 248px;
@@ -74,7 +80,7 @@
 .show-more__plus-mobile {
   display: block;
   fill: $special-grey;
-  margin: 26px auto 24px;
+  margin: 20px auto 24px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -87,7 +93,8 @@
   @media (min-width: $tablet-width) {
     display: block;
     fill: $special-grey;
-    margin: 55px auto 48px;
+    margin: auto;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {

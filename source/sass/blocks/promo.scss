@@ -8,7 +8,7 @@
   min-width: 280px;
   height: 305px;
   margin: 0 auto;
-  margin-bottom: 197px;
+  margin-bottom: 195px;
   padding: 0;
 
   @media (min-resolution: 2dppx) {
@@ -19,7 +19,7 @@
     width: 708px;
     height: 845px;
     padding: 0 30px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
     background-image: none;
     background-color: $white;
 
@@ -31,10 +31,10 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     height: 696px;
-    position: absolute;
     padding: 0 110px;
-    margin: 0;
-    margin-bottom: 165px;
+    margin: 0 auto;
+    margin-top: -110px;
+    margin-bottom: 80px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: 720px 696px;
     background-position: right;
@@ -57,16 +57,17 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  margin: 0;
+  width: 249px;
+  margin: 0 auto;
   margin-bottom: 25px;
-  padding-top: 27px;
+  padding-top: 26px;
 
   @media (min-width: $tablet-width) {
     color: $black;
     width: 414px;
     font-size: 60px;
     line-height: 60px;
-    margin-top: 38px;
+    margin-top: 60px;
     margin-bottom: 40px;
     margin-left: 87px;
     padding: 0;
@@ -85,7 +86,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -105,9 +106,11 @@
 }
 
 .promo__picture {
+  width: auto;
   margin: 0 auto;
-  margin-bottom: 3px;
-  padding: 0 20px;
+  position: relative;
+  left: 50%;
+  margin-left: -160px;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -117,12 +120,14 @@
     margin-top: -28px;
     padding: 0;
     position: absolute;
+    left: 50%;
+    margin-left: -320px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 330px;
     height: 499px;
+    margin-left: -160px;
     margin-top: -315px;
     text-align: center;
   }

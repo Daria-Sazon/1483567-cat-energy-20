@@ -1,6 +1,7 @@
 .copyright__name {
+  width: 114px;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -18,14 +19,24 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .copyright__link {
   padding-left: 10px;
   margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .copyright__logo-html {
+  padding-top: 19px;
+  margin-right: -7px;
   fill: $special-dark-grey;
 
   &:focus,
@@ -35,5 +46,9 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
   }
 }

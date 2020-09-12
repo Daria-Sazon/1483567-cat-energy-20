@@ -6,7 +6,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $dark-grey-1;
-  margin: 0 auto;
+  margin: 0;
   width: 140px;
 
   @media (min-width: $tablet-width) {
@@ -50,7 +50,7 @@
 
 .contacts__map iframe {
   box-sizing: border-box;
-  width: 100%;
+  min-width: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;
@@ -72,15 +72,16 @@
   height: auto;
 
   @media (min-width: $tablet-width) {
-    top: -257px;
-    left: 320px;
+    top: -255px;
+    left: 50%;
+    margin-left: -65px;
     width: 125px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 2485px;
-    left: 900px;
+    position: relative;
+    top: -15px;
+    left: -480px;
   }
 }
 
@@ -90,20 +91,7 @@
   }
 }
 
-.contacts__map-marker--form {
-  @media (min-width: $desktop-width) {
-    top: 1830px;
-  }
-}
-
-.contacts__map-marker--catalog {
-  @media (min-width: $desktop-width) {
-    top: 2110px;
-  }
-}
-
 .contacts__map {
-  width: 100%;
   height: 362px;
   background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@1x.png");
   background-position: center;
@@ -126,7 +114,6 @@
     @media (min-width: $desktop-width) {
       height: 400px;
       display: flex;
-      justify-content: space-around;
       align-items: center;
       background-image: url("../img/bg-map-desktop@1x.png");
       background-repeat: no-repeat;

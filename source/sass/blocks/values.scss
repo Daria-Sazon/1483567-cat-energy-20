@@ -1,7 +1,7 @@
 .values {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 80px;
+    margin-bottom: 250px;
   }
 
   @media (min-width: $desktop-width) {
@@ -12,23 +12,34 @@
 .values__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+
 
   @media (min-width: $tablet-width) {
     width: 366px;
     margin: 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
 }
 
 .values__item {
-  width: 180px;
+  width: 124px;
+  height: 55px;
+  border: 1px solid $border-grey;
+  border-radius: 3px;
+  padding-top: 16px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 162px;
+    height: 72px;
+    padding-top: 13px;
   }
 }
 
@@ -39,7 +50,7 @@
   line-height: 24px;
   margin: 0;
   justify-content: center;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -57,12 +68,14 @@
   text-align: center;
   width: 77px;
   margin: 0;
-  margin-left: 40px;
+  margin-left: 20px;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     width: 127px;
     margin-left: 16px;
+    background-color: $white;
   }
 }

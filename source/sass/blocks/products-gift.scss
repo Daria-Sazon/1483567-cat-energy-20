@@ -5,7 +5,7 @@
   height: 289px;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   background-color: $basic-green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 200px;
-    margin-bottom: 75px;
+    margin-bottom: 77px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -51,7 +51,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin-bottom: 69px;
+    margin-bottom: 68px;
     margin-left: 300px;
   }
 

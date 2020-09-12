@@ -19,7 +19,7 @@
   box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .main-nav--opened .main-nav__list {
     display: block;
   }
@@ -57,10 +57,9 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  margin-left: 108px;
+  position: relative;
+  top: -47px;
+  left: 84%;
   border: none;
   background-color: $white;
   outline: none;
@@ -71,7 +70,7 @@
 }
 
 .main-nav__list {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }

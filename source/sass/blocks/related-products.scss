@@ -8,17 +8,25 @@
     position: relative;
     width: 100vw;
     height: 2px;
-    top: 15px;
+    top: 18px;
     z-index: -1;
     background-color: $basic-green;
+  }
 
     @media (min-width: $tablet-width) {
+      width: 768px;
+
+      &::before {
       top: 24px;
       left: 50%;
       margin-left: -50vw;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1440px;
     }
   }
-}
 
 .related-products__title {
   color: $black;
@@ -27,7 +35,7 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
   background-color: $white;
   width: 248px;
   padding-left: 20px;
@@ -35,7 +43,7 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    margin: 0;
+    margin: 0 auto;
     margin-bottom: 78px;
     margin-left: 30px;
     padding: 0 37px;
@@ -61,6 +69,6 @@
     width: 1220px;
     height: 288px;
     margin: 0 auto;
-    margin-bottom: 85px;
+    margin-bottom: 87px;
   }
 }

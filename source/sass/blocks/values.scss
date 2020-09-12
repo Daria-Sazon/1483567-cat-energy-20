@@ -14,7 +14,7 @@
   justify-content: space-between;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 
 
   @media (min-width: $tablet-width) {
@@ -33,12 +33,13 @@
   height: 55px;
   border: 1px solid $border-grey;
   border-radius: 3px;
-  padding-top: 15px;
+  padding-top: 16px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 164px;
+    width: 162px;
     height: 72px;
+    padding-top: 13px;
   }
 }
 

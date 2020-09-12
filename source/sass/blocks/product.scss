@@ -31,24 +31,29 @@
 
   @media (min-width: $tablet-width) {
     width: 249px;
-    padding-bottom: 8px;
+    padding-bottom: 5px;
     margin-bottom: 5px;
     border-bottom: 1px solid $border-grey;
   }
 
   @media (min-width: $desktop-width) {
     width: 180px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 6px;
   }
 }
 
 .product__table-cell {
   font-family: "Arial", sans-serif;
   font-size: 12px;
-  line-height: 16px;
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
+  }
+  @media (min-width: $desktop-width) {
+    padding-right: 12px;
   }
 }
 
@@ -59,12 +64,22 @@
   @media (min-width: $tablet-width) {
     height: auto;
     margin-bottom: 80px;
+
+       &--big {
+      position: relative;
+      top: -10px;
+      left: -5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: auto;
-    margin-bottom: 105px;
+    margin-bottom: 100px;
+
+    &--big {
+      left: 0;
+    }
   }
 }
 
@@ -92,6 +107,14 @@
   padding-top: 15px;
   align-items: center;
 
+  &--small {
+    padding-top: 30px;
+  }
+
+  &--big {
+    padding-top: 21px;
+  }
+
   @media (min-width: $tablet-width) {
     height: 160px;
     padding: 0;
@@ -104,6 +127,8 @@
 }
 
 .product__button {
+  margin-bottom: 26px;
+
   @media (min-width: $tablet-width) {
     width: 248px;
     margin-bottom: 40px;
@@ -115,7 +140,11 @@
 }
 
 .product__wrapper {
-  margin-bottom: 16px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
 
   @media (min-width: $desktop-width) {
     height: 173px;

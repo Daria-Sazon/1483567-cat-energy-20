@@ -103,10 +103,11 @@
   flex-grow: 1;
   box-sizing: border-box;
   outline: none;
+  background-color: $white;
 
   &:active,
   &:focus {
-    border: 1px solid $dark-grey;
+    border: 2px solid $dark-grey;
   }
 
   &:active + .program-form__icon-mail,
@@ -114,6 +115,15 @@
   &:focus + .program-form__icon-mail,
   &:focus + .program-form__icon-phone {
     fill: $basic-green;
+  }
+
+  &--invalid {
+    border: 2px solid $red-error;
+  }
+
+  &--invalid + .program-form__icon-mail,
+  &--invalid + .program-form__icon-phone {
+    fill: $red-error;
   }
 
   @media (min-width: $tablet-width) {
@@ -326,18 +336,17 @@
     top: -50px;
     height: 2px;
     margin: 0;
-    left: 7%;
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
       width: 100vw;
       top: -75px;
-      left: 45%;
+      left: 44%;
       margin-left: -50vw;
     }
 
     @media (min-width: $desktop-width) {
-      left: 50%;
+      left: 47%;
       top: -72px;
     }
   }
@@ -367,13 +376,13 @@
     @media (min-width: $tablet-width) {
       width: 100vw;
       top: -88px;
-      left: 45%;
+      left: 44%;
       margin-left: -50vw;
     }
 
     @media (min-width: $desktop-width) {
       top: -90px;
-      left: 50%;
+      left: 47%;
     }
   }
 
@@ -396,18 +405,17 @@
     height: 2px;
     top: -42px;
     margin: 0;
-    left: 6%;
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
       width: 100vw;
       top: -88px;
-      left: 50%;
+      left: 46%;
       margin-left: -50vw;
     }
 
     @media (min-width: $desktop-width) {
-      left: 53%;
+      left: 49%;
     }
   }
 
@@ -542,6 +550,11 @@
     border: 1px solid $special-grey;
     box-sizing: border-box;
 
+    &:focus,
+    &:hover {
+      border: 1px solid $border-grey;
+    }
+
     @media (min-width: $tablet-width) {
       left: -30px;
       top: -2px;
@@ -586,6 +599,10 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-left: 30px;
+
+  &:active {
+    color: $opacity-2;
+  }
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -664,6 +681,14 @@
 
 .program-form__button {
   margin-bottom: 20px;
+  outline: none;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: $opacity;
+    background-color: $basic-green-1;
+  }
 
   @media (min-width: $tablet-width) {
     width: 283px;

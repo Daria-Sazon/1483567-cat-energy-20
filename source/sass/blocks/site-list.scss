@@ -49,3 +49,12 @@
     padding-bottom: 8px;
   }
 }
+
+.site-list__item--index {
+  @media (min-width: $desktop-width) {
+    &:active {
+      opacity: 1;
+      border-bottom: 2px solid $white;
+    }
+  }
+}

@@ -18,24 +18,19 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -200px;
+    top: -150px;
     bottom: 0;
-    padding-bottom: 75px;
+    padding-bottom: 30px;
   }
 }
 
 .page-footer__wrapper-contacts {
   @media (min-width: $desktop-width) {
     position: relative;
-    top: -200px;
-    bottom: 0;
-
-    &--form {
-      height: 600px;
-      top: 0;
+    height: 550px;
+    top: 0;
     }
   }
-}
 
 .page-footer__contacts {
   display: flex;
@@ -54,20 +49,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    position: absolute;
     width: 415px;
     padding-top: 60px;
     padding-left: 75px;
     padding-right: 80px;
     padding-bottom: 55px;
-    left: -325px;
-    top: 300px;
-
-    &--form {
-      position: absolute;
-      left: 110px;
-      top: 100px;
-    }
+    left: 110px;
+    top: 100px;
   }
 }
 

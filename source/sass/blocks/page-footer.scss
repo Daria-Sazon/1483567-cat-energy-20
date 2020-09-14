@@ -20,6 +20,7 @@
     position: relative;
     top: -200px;
     bottom: 0;
+    padding-bottom: 75px;
   }
 }
 
@@ -28,6 +29,11 @@
     position: relative;
     top: -200px;
     bottom: 0;
+
+    &--form {
+      height: 600px;
+      top: 0;
+    }
   }
 }
 
@@ -56,6 +62,12 @@
     padding-bottom: 55px;
     left: -325px;
     top: 300px;
+
+    &--form {
+      position: absolute;
+      left: 110px;
+      top: 100px;
+    }
   }
 }
 

@@ -17,6 +17,7 @@
   border: none;
 
   &:hover {
+    color: $opacity;
     background-color: $basic-green-1;
   }
 }

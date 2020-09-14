@@ -187,14 +187,20 @@
   margin-right: 17px;
   outline: none;
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-right: 8px;
-    padding-left: 5px;
     background-color: $special-grey;
-    border-bottom: 1px dotted $black;
+    border-bottom: 1px dotted $special-dark-grey;
+
+    &:hover {
+      border-bottom: 1px solid $special-dark-grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -244,7 +250,12 @@
     top: -265%;
     left: 50%;
     margin-left: -15px;
+    cursor: pointer;
     border: 13px solid $white;
     border-radius: 50%;
+
+    &:active {
+      filter: drop-shadow(0 1px 2px $basic-green);
+    }
   }
 }
